@@ -1,0 +1,11 @@
+----CRIANDO A FUNÇÃO-----
+CREATE or REPLACE FUNCTION somar_clientes(qtd_total FLOAT, qtd FLOAT)
+   RETURNS FLOAT AS $$  --RETORNA O TIPO----
+BEGIN
+
+  RETURN qtd_total - qtd; ---LÓGICA DA FUNÇÃO - RETORNA O PARAMETRO DENTRO DA FUNÇÃO----
+
+END
+
+
+$$ LANGUAGE PLPGSQL
